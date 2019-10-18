@@ -94,11 +94,27 @@ header > a:hover {
 }
 
 .projectContainer {
-    width: 30%;
+    width: 31%;
+    height: 15rem;
     margin: 1%;
 
     background-color: #3c3744;
-    color: #fbfff1;
 
+    text-align: center;
+    color: #fbfff1;
     border-radius: 1%;
+
+    display: table;
+}
+
+.hidden {
+    display: none;
+}
+
+.projectName {
+    font-size: 2rem;
+
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
