@@ -1,3 +1,28 @@
-fooBar = function () {
-    console.log("Hello world!");
+fadeIn = function (elem) {
+    let x = elem.getElementsByTagName("p");
+
+    x[0].classList.remove("slideDown");
+    x[0].classList.add("slideUp");
+    x[0].classList.add("noappear");
+    for (let i = 1; i < 4; i++)
+    {
+        x[i].classList.remove("slideUp");
+        x[i].classList.add("slideDown");
+        x[i].classList.add("appear");
+    }
+}
+
+fadeOut = function (elem) {
+    let x = elem.getElementsByTagName("p");
+
+    x[0].classList.remove("noappear");
+    x[0].classList.remove("slideUp");
+    x[0].classList.add("slideDown");
+
+    for (let i = 1; i < 4; i++)
+    {
+        x[i].classList.remove("slideDown");
+        x[i].classList.remove("appear");
+        x[i].classList.add("slideUp");
+    }
 }

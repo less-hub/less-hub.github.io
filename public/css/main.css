@@ -2,6 +2,40 @@ body {
     
 }
 
+.hidden {
+    display: none;
+}
+
+@-webkit-keyframes slide-down {
+    0% { opacity: 0; -webkit-transform: translateY(-100%); }   
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes slide-down {
+    0% { opacity: 0; -moz-transform: translateY(-100%); }   
+  100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+@-webkit-keyframes slide-up {
+    0% { opacity: 1; -webkit-transform: translateY(0); }   
+  100% { opacity: 0; -webkit-transform: translateY(-100%); }
+}
+
+@-moz-keyframes slide-up {
+    0% { opacity: 1; -moz-transform: translateY(0); }   
+  100% { opacity: 0; -moz-transform: translateY(-100%); }
+}
+
+.slideDown {
+    -webkit-animation: slide-down .5s ease-out;
+    -moz-animation: slide-down .5s ease-out;
+}
+
+.slideUp {
+    -webkit-animation: slide-up .5s ease-out;
+    -moz-animation: slide-up .5s ease-out;
+}
+
 body > header {
     position: absolute;
     left: 0;
@@ -99,16 +133,11 @@ header > a:hover {
     margin: 1%;
 
     background-color: #3c3744;
-
     text-align: center;
     color: #fbfff1;
     border-radius: 1%;
 
-    display: table;
-}
-
-.hidden {
-    display: none;
+    cursor: pointer;
 }
 
 .projectName {
@@ -116,5 +145,24 @@ header > a:hover {
 
     text-align: center;
     vertical-align: middle;
-    display: table-cell;
+}
+
+.projectDescription {
+    opacity: 0;
+}
+
+.projectTags {
+    opacity: 0;
+}
+
+.projectLanguages {
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.noappear {
+    opacity: 0;
 }
