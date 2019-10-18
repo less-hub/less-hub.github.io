@@ -1,0 +1,58 @@
+.mainPage {
+    position: absolute;
+    top: 0;
+    left: 20%;
+
+    width: 78%;
+    height: 100%;
+
+    padding-left: 2%;
+    background-color: #fbfff1;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #3c3744;
+}
+
+.allPartsContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.partContainer {
+    width: 31%;
+    height: 15rem;
+    margin: 1%;
+
+    background-color: #3c3744;
+    text-align: center;
+    color: #fbfff1;
+    border-radius: 1%;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.partName {
+    font-size: 2rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.partDescription {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    width: 95%;
+}

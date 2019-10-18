@@ -6,9 +6,9 @@
   <title>Less Homepage</title>
   <meta name="description" content="Less GitHub Homepage">
   <meta name="author" content="Less">
-  <link rel="stylesheet" href="../public/css/index.css">
-  <link rel="stylesheet" href="../public/css/animations.css">
   <link rel="stylesheet" href="../public/css/header.css">
+  <link rel="stylesheet" href="../public/css/cppmain.css">
+  <link rel="stylesheet" href="../public/css/animations.css">
   <script src="https://kit.fontawesome.com/fba089255e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,21 +26,18 @@
     </header>
     <div class="mainPage">
       <h2 class="mainTitle">C++ Reference</h2>
-      <div id="allProjectsContainer">
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)" onmousedown="toPage('#part1')">
-            <p class="projectName">Parte 1</p>
-            <p class="projectDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
-            <p class="projectLanguages">C++</p>
+      <div class="allPartsContainer">
+        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
+            <p class="partName">Parte 1</p>
+            <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
         </div>
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Parte 2</p>
-            <p class="projectDescription">Project Description</p>
-            <p class="projectLanguages">Project, Languages</p>
+        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
+            <p class="partName">Parte 2</p>
+            <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
         </div>
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Parte 3</p>
-            <p class="projectDescription">Project Description</p>
-            <p class="projectLanguages">Project, Languages</p>
+        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
+            <p class="partName">Parte 3</p>
+            <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
         </div>
       </div>
     </div>
