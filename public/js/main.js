@@ -3,8 +3,9 @@ fadeIn = function (elem) {
 
     x[0].classList.remove("slideDown");
     x[0].classList.add("slideUp");
-    x[0].classList.add("noappear");
-    for (let i = 1; i < 4; i++)
+    x[0].classList.add("disappear");
+    
+    for (let i = 1; i < 3; i++)
     {
         x[i].classList.remove("slideUp");
         x[i].classList.add("slideDown");
@@ -15,11 +16,11 @@ fadeIn = function (elem) {
 fadeOut = function (elem) {
     let x = elem.getElementsByTagName("p");
 
-    x[0].classList.remove("noappear");
+    x[0].classList.remove("disappear");
     x[0].classList.remove("slideUp");
     x[0].classList.add("slideDown");
 
-    for (let i = 1; i < 4; i++)
+    for (let i = 1; i < 3; i++)
     {
         x[i].classList.remove("slideDown");
         x[i].classList.remove("appear");
