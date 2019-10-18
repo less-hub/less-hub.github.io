@@ -1,4 +1,4 @@
-#mainPage {
+.mainPage {
     position: absolute;
     top: 0;
     left: 20%;
@@ -10,7 +10,7 @@
     background-color: #fbfff1;
 }
 
-#mainTitle {
+.mainTitle {
     text-align: center;
     font-size: 2rem;
     color: #3c3744;
