@@ -1,5 +1,5 @@
 header {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
 
@@ -52,6 +52,14 @@ header > a:hover {
     list-style-type: none;
 }
 
+#navigator > li:first-child {
+    padding-top: 0%;
+}
+
+#navigator > li {
+    padding-top: 3%;
+}
+
 #navigator > li > a {
     text-decoration: none;
     font-size: 1.3rem;
@@ -61,4 +69,9 @@ header > a:hover {
 
 #navigator > li > a:hover {
     color: #9bc1bc;
+}
+
+#navigator > li > .active {
+    color: #9bc1bc;
+    pointer-events: none;
 }

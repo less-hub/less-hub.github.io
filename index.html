@@ -19,26 +19,16 @@
         <p><i class="fas fa-envelope"></i> alessiocellucci.dev@gmail.com</p>
         <a href="#githubpage"><i class="fab fa-github"></i> less-hub</a>
         <nav id="navigator">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
         </nav>
     </header>
     <div id="mainPage">
       <h2 id="mainTitle">I miei progetti</h2>
       <div id="allProjectsContainer">
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Project Name</p>
-            <p class="projectDescription">Project Description</p>
-            <p class="projectLanguages">Project, Languages</p>
-        </div>
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Project Name</p>
-            <p class="projectDescription">Project Description</p>
-            <p class="projectLanguages">Project, Languages</p>
-        </div>
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Project Name</p>
-            <p class="projectDescription">Project Description</p>
-            <p class="projectLanguages">Project, Languages</p>
+        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)" onmousedown="toPage('cpp/main.html')">
+            <p class="projectName">C++ Reference</p>
+            <p class="projectDescription">Un riassiunto dei costrutti principali del C++, scendendo mano a mano nel dettaglio cosi da avere una visione generale del linguaggio.</p>
+            <p class="projectLanguages">C++</p>
         </div>
       </div>
     </div>

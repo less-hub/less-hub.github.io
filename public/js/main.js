@@ -27,3 +27,7 @@ fadeOut = function (elem) {
         x[i].classList.add("slideUp");
     }
 }
+
+toPage = function (pathToPage) {
+    location.href=`${pathToPage}`;
+}
