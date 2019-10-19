@@ -1,0 +1,56 @@
+.navigatorIndexContainer {
+  height: 40%;
+  width: 100%;
+
+  margin-top: -7%;
+}
+
+.navigatorIndex {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  height: 26rem;
+  width: 100%;
+
+  margin-left: -6%;
+}
+
+.navigatorIndex > li {
+  padding-top: 1%;
+}
+
+.navigatorIndex > li > a {
+  text-decoration: none;
+
+  color: #fbfff1;
+  transition: color .2s linear;
+}
+
+.navigatorIndex > li > a:hover {
+  color: #9bc1bc;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.mainPage p {
+  color: #3c3744;
+  font-size: 1.2rem;
+}
+
+pre {
+  padding-top: .5%;
+  padding-bottom: .5%;
+  border-left: 2px solid #3c3744;
+  font-size: 1.3rem;
+}
+
+.chapter {
+  padding-top: 1%;
+}
