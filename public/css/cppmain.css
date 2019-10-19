@@ -34,8 +34,6 @@
     color: #fbfff1;
     border-radius: 1%;
 
-    cursor: pointer;
-
     position: relative;
 
     display: flex;
@@ -49,10 +47,40 @@
     top: 25%;
 }
 
-.partDescription {
-    position: absolute;
-    top: 2%;
-    opacity: 0;
+.partInfo {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
 
-    width: 95%;
+    opacity: 0;
+}
+
+.partDescription {
+    height: 100%;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.partIndex {
+    width: 75%;
+    height: 15rem;
+    
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.partIndex > li {
+    font-size: 1.3rem;
+}
+
+.partIndex > li > a {
+    color: #fbfff1;
+    text-decoration: none;
+}
+
+.partIndex > li > a:hover {
+    color: #9bc1bc;
 }

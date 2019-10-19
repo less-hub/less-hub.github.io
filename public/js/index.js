@@ -30,15 +30,18 @@ fadeOut = function (elem) {
 
 openContainer = function (elem) {
     let x = elem.getElementsByTagName("p");
-    let y = elem.getElementsByClassName("partDescription");
+    let y = elem.getElementsByClassName("partInfo");
+
+    y[0].style.display = "flex";
 
     elem.classList.remove("containerImpand");
     elem.classList.add("containerExpand");
     elem.classList.remove("impanded");
     elem.classList.add("expanded");
 
-    x[0].classList.remove("slideDown");
-    x[0].classList.add("slideUp");
+    x[0].classList.remove("makeAppear");
+    x[0].classList.remove("appear");
+    x[0].classList.add("makeDisappear");
     x[0].classList.add("disappear");
 
     y[0].classList.remove("slideUp");
@@ -48,20 +51,23 @@ openContainer = function (elem) {
 
 closeContainer = function (elem) {
     let x = elem.getElementsByTagName("p");
-    let y = elem.getElementsByClassName("partDescription");
+    let y = elem.getElementsByClassName("partInfo");
 
     elem.classList.remove("containerExpand");
     elem.classList.add("containerImpand");
     elem.classList.remove("expanded");
     elem.classList.add("impanded");
 
+    x[0].classList.remove("makeDisappear");
     x[0].classList.remove("disappear");
-    x[0].classList.remove("slideUp");
-    x[0].classList.add("slideDown");
+    x[0].classList.add("makeAppear");
+    x[0].classList.add("appear");
 
     y[0].classList.remove("slideDown");
     y[0].classList.remove("appear");
     y[0].classList.add("slideUp");
+
+    y[0].style.display = "none";
 }
 
 toPage = function (pathToPage) {
