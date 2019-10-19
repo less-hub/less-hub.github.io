@@ -37,21 +37,20 @@
     cursor: pointer;
 
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projectName {
     font-size: 2rem;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 0 2%;
 }
 
 .projectDescription {
     position: absolute;
     top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
     opacity: 0;
 
     width: 95%;
@@ -60,7 +59,5 @@
 .projectLanguages {
     position: absolute;
     bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
     opacity: 0;
 }
