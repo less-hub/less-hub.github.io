@@ -66,8 +66,9 @@
 
 .partIndex {
     width: 75%;
+    padding-top: 1%;
     height: 15rem;
-    
+
     display: flex;
     flex-flow: column wrap;
 }
