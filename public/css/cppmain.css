@@ -62,11 +62,11 @@
     height: 100%;
     width: 20%;
     margin-left: 5%;
+    pointer-events: none;
 }
 
 .partIndex {
     width: 75%;
-    padding-top: 1%;
     height: 15rem;
 
     display: flex;
