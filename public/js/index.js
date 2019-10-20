@@ -115,3 +115,8 @@ $("pre code").each(function(){
     var pattern = html.match(/\s*\n[\t\s]*/);
     $(this).html(html.replace(new RegExp(pattern, "g"),'\n'));
 });
+
+$('#pokemulator').click(function () {
+    var redirectWindow = window.open('https://github.com/less-hub/less-Pokemulator', '_blank');
+    redirectWindow.location;
+});
