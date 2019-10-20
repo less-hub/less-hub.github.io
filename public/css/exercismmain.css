@@ -15,9 +15,7 @@
   text-align: center;
   color: #fbfff1;
   border-radius: 1%;
-
-  cursor: pointer;
-
+  
   position: relative;
 
   transition: height .5s linear;
