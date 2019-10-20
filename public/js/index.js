@@ -117,6 +117,5 @@ $("pre code").each(function(){
 });
 
 $('#pokemulator').click(function () {
-    var redirectWindow = window.open('https://github.com/less-hub/less-Pokemulator', '_blank');
-    redirectWindow.location;
+    (window.open('https://github.com/less-hub/less-Pokemulator', '_blank')).location;
 });
