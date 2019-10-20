@@ -5,37 +5,62 @@
 }
 
 .exerciseContainer {
-
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 5%;
 }
 
 .exerciseInfo {
-
+  width: 50%;
+  align-self: flex-start;
 }
 
 .exerciseInfoLabel {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #9bc1bc;
+  padding-bottom: 1%;
 
 }
 
 .exerciseInfoPar {
-
+  font-size: 1.2rem;
 }
 
 .exerciseCodeContainer {
-
+  padding-right: 5%;
+  width: 40%;
 }
 
 .exerciseCodeHeader {
-
 }
 
 .exerciseCodeHeaderLabel {
-
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #9bc1bc;
 }
 
 .exerciseCodeCpp {
-
 }
 
 .exerciseCodeCppLabel {
-  
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #9bc1bc;
+}
+
+pre {
+  font-size: 1.2rem;
+  margin-top: -5%;
+}
+
+pre > code {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+code > strong {
+  color: #9bc1bc;
 }
