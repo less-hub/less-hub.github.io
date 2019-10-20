@@ -39,14 +39,24 @@ h3 {
   font-size: 1.4rem;
 }
 
-pre {
+.codeAndLabel > pre {
   font-size: 1.2rem;
-  border-left: 2px solid #3c3744;
-  padding-left: 2%;
+  border-left: 2px solid #9bc1bc;
+  padding-left: 10%;
 }
 
-code > strong {
+.codeAndLabel > pre > code {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.codeAndLabel code > strong {
   color: #9bc1bc;
+}
+
+.codeAndLabel .codeLabel {
+  border-left: 2px solid #9bc1bc;
+  padding-left: 10%;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .mainPage p {
@@ -63,4 +73,22 @@ code > strong {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.codeCommentsContainer {
+  padding-left: 10%;
+}
+
+.codeCommentsContainer .codeCommentHead {
+  font-size: 1.5rem;
+  color: #9bc1bc;
+}
+
+.codeCommentsContainer .codeComment {
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.codeComment > ul {
+  color: #3c3744;
 }
