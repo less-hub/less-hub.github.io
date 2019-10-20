@@ -76,10 +76,7 @@ openContainerHeight = function(elem) {
   let x = elem.getElementsByTagName("p");
   let y = elem.getElementsByTagName("ul");
 
-  x[0].classList.remove("makeAppear");
-  x[0].classList.remove("appear");
-  x[0].classList.add("makeDisappear");
-  x[0].classList.add("disappear");
+  x[0].style.top = "80%";
 
   y[0].style.display = "block";
 
@@ -93,10 +90,7 @@ closeContainerHeight = function(elem) {
   let x = elem.getElementsByTagName("p");
   let y = elem.getElementsByTagName("ul");
 
-  x[0].classList.remove("makeDisappear");
-  x[0].classList.remove("disappear");
-  x[0].classList.add("makeAppear");
-  x[0].classList.add("appear");
+  x[0].style.top = "50%";
 
   y[0].classList.remove("makeAppear");
   y[0].classList.remove("appear");
