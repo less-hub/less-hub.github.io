@@ -33,30 +33,44 @@
         <div class="exerciseInfo">
           <p class="exerciseInfoLabel">Info</p>
           <p class="exerciseInfoPar">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Given a year, report if it is a leap year.<br>
+
+            The tricky thing here is that a leap year in the Gregorian calendar occurs:<br>
+
+            <pre><code>
+            on every year that is evenly divisible by 4
+              except every year that is evenly divisible by 100
+                unless the year is also evenly divisible by 400
+            </code></pre>
           </p>
         </div>
         <div class="exerciseCodeContainer">
           <div class="exerciseCodeHeader">
             <p class="exerciseCodeHeaderLabel">Leap.h</p>
             <pre><code>
-              int x = 2;
-              x * x = 7;
-              x = func(2, "sksk");
+              #if !defined(LEAP_H)
+              #define LEAP_H
 
-              <strong>if(x == 7)</strong>
-                return true;
+              namespace leap {
+                bool is_leap_year(const int);
+              }
+
+              #endif
             </code></pre>
           </div>
           <div class="exerciseCodeCpp">
             <p class="exerciseCodeCppLabel">Leap.cpp</p>
             <pre><code>
-              int x = 2;
-              x * x = 7;
-              x = func(2, "sksk");
+              #include "leap.h"
 
-              <strong>if(x == 7)</strong>
-                return true;
+              namespace leap {
+
+                bool is_leap_year(const int year) {
+                  return year % 4 == 0 &&
+                    (year % 100 != 0 || year % 400 == 0);
+                }
+
+              }
             </code></pre>
           </div>
         </div>
