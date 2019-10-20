@@ -39,18 +39,28 @@ h3 {
   font-size: 1.4rem;
 }
 
+pre {
+  font-size: 1.2rem;
+  border-left: 2px solid #3c3744;
+  padding-left: 2%;
+}
+
+code > strong {
+  color: #9bc1bc;
+}
+
 .mainPage p {
   color: #3c3744;
   font-size: 1.2rem;
 }
 
-pre {
-  padding-top: .5%;
-  padding-bottom: .5%;
-  border-left: 2px solid #3c3744;
-  font-size: 1.3rem;
-}
-
 .chapter {
   padding-top: 1%;
+}
+
+.codeContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
