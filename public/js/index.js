@@ -72,6 +72,40 @@ closeContainer = function (elem) {
     y[0].style.display = "none";
 }
 
+openContainerHeight = function(elem) {
+  let x = elem.getElementsByTagName("p");
+  let y = elem.getElementsByTagName("ul");
+
+  x[0].classList.remove("makeAppear");
+  x[0].classList.remove("appear");
+  x[0].classList.add("makeDisappear");
+  x[0].classList.add("disappear");
+
+  y[0].style.display = "block";
+
+  y[0].classList.remove("makeDisappear");
+  y[0].classList.remove("disappear");
+  y[0].classList.add("makeAppear");
+  y[0].classList.add("appear");
+}
+
+closeContainerHeight = function(elem) {
+  let x = elem.getElementsByTagName("p");
+  let y = elem.getElementsByTagName("ul");
+
+  x[0].classList.remove("makeDisappear");
+  x[0].classList.remove("disappear");
+  x[0].classList.add("makeAppear");
+  x[0].classList.add("appear");
+
+  y[0].classList.remove("makeAppear");
+  y[0].classList.remove("appear");
+  y[0].classList.add("makeDisappear");
+  y[0].classList.add("disappear");
+
+  y[0].style.display = "none";
+}
+
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
 }

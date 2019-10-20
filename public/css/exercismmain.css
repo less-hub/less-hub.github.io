@@ -1,0 +1,77 @@
+.allExercisesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.exerciseLanguageContainer {
+  width: 31%;
+  height: 15rem;
+  margin: 1%;
+
+  background-color: #3c3744;
+  text-align: center;
+  color: #fbfff1;
+  border-radius: 1%;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition: height .5s linear;
+}
+
+.exerciseLanguageContainer:hover {
+  height: 45rem;
+}
+
+.languageName {
+  position: absolute;
+
+  font-size: 1.5rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.exerciseIndex {
+  display: none;
+  width: 80%;
+
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  height: 45rem;
+}
+
+.exerciseIndex > li {
+  list-style: none;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.exerciseIndex > li > a {
+  color: #fbfff1;
+  text-decoration: none;
+
+  transition: color .5s linear;
+}
+
+.exerciseIndex > li > a:hover {
+  color: #9bc1bc;
+}
+
+.mainTitle > a {
+  text-decoration: none;
+
+  color: #9bc1bc;
+  transition: color .5s linear;
+}
+
+.mainTitle > a:hover {
+  color: #3c3774;
+}
