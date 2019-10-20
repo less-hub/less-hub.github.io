@@ -1,0 +1,7 @@
+800000 => 9bc1bc
+
+000000 => 3c3744
+
+800080 => 3c3744
+
+https://tohtml.com/colorer.php?type=cpp
