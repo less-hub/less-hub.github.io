@@ -1,78 +1,49 @@
-.allExercisesContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
-.exerciseLanguageContainer {
-  width: 31%;
-  height: 15rem;
-  margin: 1%;
-
-  background-color: #3c3744;
-  text-align: center;
-  color: #fbfff1;
-  border-radius: 1%;
-  
-  position: relative;
-
-  transition: height .5s linear;
-}
-
-.exerciseLanguageContainer:hover {
-  height: 45rem;
-}
-
-.languageName {
-  position: absolute;
-
-  font-size: 1.5rem;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -150%);
-
-  transition: top .5s linear;
-}
-
-.exerciseIndex {
-  display: none;
-  width: 80%;
-
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-
-  height: 45rem;
-}
-
-.exerciseIndex > li {
-  list-style: none;
-  padding-top: 10%;
-  padding-left: 5%;
-}
-
-.exerciseIndex > li > a {
-  color: #fbfff1;
-  text-decoration: none;
-  font-size: 1.4rem;
-
-  transition: color .5s linear;
-}
-
-.exerciseIndex > li > a:hover {
-  color: #9bc1bc;
-}
-
 .mainTitle > a {
   text-decoration: none;
+  color: var(--main-blue);
 
-  color: #9bc1bc;
   transition: color .5s linear;
 }
 
 .mainTitle > a:hover {
-  color: #3c3774;
+  color: var(--main-black);
+
+}
+#allLanguagesContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.languageContainer {
+    width: 31%;
+    height: 15rem;
+    margin: 1%;
+
+    background-color: #3c3744;
+    text-align: center;
+    color: #fbfff1;
+    border-radius: 1%;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color .5s, background-color .5s linear;
+}
+
+.languageContainer:hover {
+  color: var(--main-black);
+  background-color: var(--main-blue);
+}
+
+.languageName {
+    font-size: 2rem;
+    padding: 0 2%;
 }

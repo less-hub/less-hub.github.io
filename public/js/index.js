@@ -100,6 +100,18 @@ closeContainerHeight = function(elem) {
   y[0].style.display = "none";
 }
 
+focusOn = function(elem) {
+  let x = elem.getElementsByTagName("p")[0];
+
+  //x.style.color = "black";
+}
+
+focusOff = function(elem) {
+  let x = elem.getElementsByTagName("p")[0];
+
+  //x.style.color = "#fbfff1";
+}
+
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
 }

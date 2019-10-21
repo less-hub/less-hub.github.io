@@ -26,44 +26,16 @@
         </nav>
     </header>
     <div class="mainPage">
-      <h2 class="mainTitle">Esercizi <a href="https://exercism.io/" target="_blank">exercism.io</a></h2>
-      <div class="allExercisesContainer">
-        <div class="exerciseLanguageContainer" onmouseover="openContainerHeight(this)" onmouseout="closeContainerHeight(this)" onmousedown="#exercise">
+      <h2 class="mainTitle">I miei esercizi su <a href="https://exercism.io/" target="_blank">exercism.io</a></h2>
+      <div id="allLanguagesContainer">
+        <div class="languageContainer" onmouseover="focusOn(this)" onmouseout="focusOff(this)" onmousedown="toPage('exercism/cpp.html')">
             <p class="languageName">C++</p>
-            <ul class="exerciseIndex">
-              <li><a href="cpp/leap.html">Leap</a></li>
-              <li><a href="cpp/reversestring.html">Reverse string</a></li>
-              <li><a href="cpp/isogram.html">Isogram</a></li>
-              <li><a href="cpp/scrabblescore.html">Scrabble score</a></li>
-              <li><a href="cpp/binary.html">Binary</a></li>
-              <li><a href="cpp/pascalstriangle.html">Pascal's triangle</a></li>
-              <li><a href="cpp/allyourbase.html">All your base</a></li>
-              <li><a href="cpp/hamming.html">Hamming</a></li>
-              <li><a href="cpp/differenceofsquares.html">Difference of squares</a></li>
-              <li><a href="cpp/nucleotidecount.html">Nucleotide count</a></li>
-              <li><a href="cpp/gradeschool.html">Grade school</a></li>
-              <li><a href="cpp/rnatranscription.html">RNA transcription</a></li>
-              <li><a href="cpp/sieve.html">Sieve</a></li>
-              <li><a href="cpp/spaceage.html">Space Age</a></li>
-              <li><a href="cpp/triangle.html">Triangle</a></li>
-              <li><a href="cpp/grains.html">Grains</a></li>
-              <li><a href="cpp/raindrops.html">Raindrops</a></li>
-              <li><a href="cpp/pangram.html">Pangram</a></li>
-            </ul>
         </div>
-
-        <div class="exerciseLanguageContainer" onmouseover="openContainerHeight(this)" onmouseout="closeContainerHeight(this)" onmousedown="#exercise">
+        <div class="languageContainer" onmouseover="focusOn(this)" onmouseout="focusOff(this)" onmousedown="toPage('exercism/csharp.html')">
             <p class="languageName">C#</p>
-            <ul class="exerciseIndex">
-              <li><a href="#exercise">TBD</a></li>
-            </ul>
         </div>
-
-        <div class="exerciseLanguageContainer" onmouseover="openContainerHeight(this)" onmouseout="closeContainerHeight(this)" onmousedown="#exercise">
+        <div class="languageContainer" onmouseover="focusOn(this)" onmouseout="focusOff(this)" onmousedown="toPage('exercism/javascript.html')">
             <p class="languageName">JavaScript</p>
-            <ul class="exerciseIndex">
-              <li><a href="#exercise">TBD</a></li>
-            </ul>
         </div>
       </div>
     </div>
