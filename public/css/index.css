@@ -11,6 +11,8 @@
     height: 15rem;
     margin: 1%;
 
+    text-decoration: none;
+
     background-color: #3c3744;
     text-align: center;
     color: #fbfff1;
@@ -23,10 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-a.projectContainer {
-  text-decoration: none;
 }
 
 .projectName {

@@ -72,6 +72,7 @@ closeContainer = function (elem) {
     y[0].style.display = "none";
 }
 
+/*
 openContainerHeight = function(elem) {
   let x = elem.getElementsByTagName("p");
   let y = elem.getElementsByTagName("ul");
@@ -99,18 +100,7 @@ closeContainerHeight = function(elem) {
 
   y[0].style.display = "none";
 }
-
-focusOn = function(elem) {
-  let x = elem.getElementsByTagName("p")[0];
-
-  //x.style.color = "black";
-}
-
-focusOff = function(elem) {
-  let x = elem.getElementsByTagName("p")[0];
-
-  //x.style.color = "#fbfff1";
-}
+*/
 
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
@@ -120,12 +110,4 @@ $("pre code").each(function(){
     var html = $(this).html();
     var pattern = html.match(/\s*\n[\t\s]*/);
     $(this).html(html.replace(new RegExp(pattern, "g"),'\n'));
-});
-
-$('#pokemulator').click(function () {
-    (window.open('https://github.com/less-hub/less-Pokemulator', '_blank')).location;
-});
-
-$('.exercismlink').click(function () {
-    (window.open('https://github.com/less-hub/less-Pokemulator', '_blank')).location;
 });
