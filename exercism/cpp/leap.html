@@ -54,25 +54,22 @@
               <span style='color:#9bc1bc; font-weight:bold; '>bool</span> is_leap_year<span style='color:#808030; '>(</span><span style='color:#9bc1bc; font-weight:bold; '>const</span> <span style='color:#9bc1bc; font-weight:bold; '>int</span><span style='color:#808030; '>)</span><span style='color:#3c3744; '>;</span>
             <span style='color:#3c3744; '>}</span>
 
-
             <span style='color:#004a43; '>#</span><span style='color:#004a43; '>endif</span>
           </code></pre>
             <!--Created using ToHtml.com on 2019-10-20 21:27:28 UTC -->
           </div>
           <div class="exerciseCodeCpp">
             <p class="exerciseCodeCppLabel">Leap.cpp</p>
-            <pre><code>
-              #include "leap.h"
+            <pre style='color:#3c3744;'><code><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#9bc1bc; '>"</span><span style='color:#40015a; '>leap.h</span><span style='color:#9bc1bc; '>"</span><br>
+            <span style='color:#9bc1bc; font-weight:bold; '>namespace</span> leap <span style='color:#3c3744; '>{</span>
+              <span style='color:#9bc1bc; font-weight:bold; '>bool</span> is_leap_year<span style='color:#808030; '>(</span><span style='color:#9bc1bc; font-weight:bold; '>const</span> <span style='color:#9bc1bc; font-weight:bold; '>int</span> year<span style='color:#808030; '>)</span> <span style='color:#3c3744; '>{</span>
+                <span style='color:#9bc1bc; font-weight:bold; '>return</span> year <span style='color:#808030; '>%</span> <span style='color:#008c00; '>4</span> <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>&amp;</span><span style='color:#808030; '>&amp;</span>
+                  <span style='color:#808030; '>(</span>year <span style='color:#808030; '>%</span> <span style='color:#008c00; '>100</span> <span style='color:#808030; '>!</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>|</span><span style='color:#808030; '>|</span> year <span style='color:#808030; '>%</span> <span style='color:#008c00; '>400</span> <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span><span style='color:#3c3744; '>;</span>
+              <span style='color:#3c3744; '>}</span>
 
-              namespace leap {
-
-                bool is_leap_year(const int year) {
-                  return year % 4 == 0 &&
-                    (year % 100 != 0 || year % 400 == 0);
-                }
-
-              }
+            <span style='color:#3c3744; '>}</span>
             </code></pre>
+            <!--Created using ToHtml.com on 2019-10-21 08:01:00 UTC -->
           </div>
         </div>
     </div>
