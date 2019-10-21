@@ -39,8 +39,7 @@
 }
 
 .languageContainer:hover {
-  color: var(--main-black);
-  background-color: var(--main-blue);
+  color: var(--main-blue);
 }
 
 .languageName {
