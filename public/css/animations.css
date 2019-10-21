@@ -133,3 +133,7 @@
 .posDown {
     -moz-transform: translate(-610%, 300%);
 }
+
+.projectDescription.appear {
+  opacity: 1;
+}

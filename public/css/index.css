@@ -25,6 +25,10 @@
     align-items: center;
 }
 
+a.projectContainer {
+  text-decoration: none;
+}
+
 .projectName {
     font-size: 2rem;
     padding: 0 2%;
