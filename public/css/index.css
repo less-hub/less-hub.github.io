@@ -30,6 +30,8 @@
 .projectName {
     font-size: 2rem;
     padding: 0 2%;
+
+    transition: opacity .5s linear;
 }
 
 .projectDescription {
@@ -38,10 +40,15 @@
     opacity: 0;
 
     width: 95%;
+
+    transition: opacity .5s linear;
 }
 
 .projectLanguages {
     position: absolute;
     bottom: 2%;
     opacity: 0;
+
+    transition: opacity .5s linear;
+
 }

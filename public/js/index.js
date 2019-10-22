@@ -1,30 +1,7 @@
-fadeIn = function (elem) {
-    let x = elem.getElementsByTagName("p");
-
-    x[0].classList.remove("slideDown");
-    x[0].classList.add("slideUp");
-    x[0].classList.add("disappear");
-
-    for (let i = 1; i < x.length; i++)
-    {
-        x[i].classList.remove("slideUp");
-        x[i].classList.add("slideDown");
-        x[i].classList.add("appear");
-    }
-}
-
-fadeOut = function (elem) {
-    let x = elem.getElementsByTagName("p");
-
-    x[0].classList.remove("disappear");
-    x[0].classList.remove("slideUp");
-    x[0].classList.add("slideDown");
-
-    for (let i = 1; i < x.length; i++)
-    {
-        x[i].classList.remove("slideDown");
-        x[i].classList.remove("appear");
-        x[i].classList.add("slideUp");
+toggleContent = function (elem) {
+    for ( let i = 0; i < elem.children.length; i++){
+      slide( elem.children[i] );
+      fade ( elem.children[i] );
     }
 }
 
@@ -105,9 +82,3 @@ closeContainerHeight = function(elem) {
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
 }
-
-$("pre code").each(function(){
-    var html = $(this).html();
-    var pattern = html.match(/\s*\n[\t\s]*/);
-    $(this).html(html.replace(new RegExp(pattern, "g"),'\n'));
-});

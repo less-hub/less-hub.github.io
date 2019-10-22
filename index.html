@@ -8,6 +8,8 @@
   <meta name="author" content="Less">
   <link rel="stylesheet" href="public/css/index.css">
   <link rel="stylesheet" href="public/css/animations.css">
+  <link rel="stylesheet" href="public/css/animations/fade.css">
+  <link rel="stylesheet" href="public/css/animations/slide.css">
   <link rel="stylesheet" href="public/css/header.css">
   <link rel="stylesheet" href="public/css/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -26,24 +28,25 @@
     <div class="mainPage">
       <h2 class="mainTitle">I miei progetti</h2>
       <div id="allProjectsContainer">
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)" onmousedown="toPage('cpp/cpp.html')">
-            <p class="projectName">C++ Reference</p>
-            <p class="projectDescription">Un riassiunto dei costrutti principali del C++, scendendo mano a mano nel dettaglio cosi da avere una visione generale del linguaggio.</p>
-            <p class="projectLanguages">C++</p>
+        <div class="projectContainer" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)" onmousedown="toPage('cpp/cpp.html')">
+            <p class="projectName slideToDown makeAppear appear">C++ Reference</p>
+            <p class="projectDescription slideToUp makeDisappear disappear">Un riassunto dei costrutti principali del C++, scendendo mano a mano nel dettaglio cosi da avere una visione generale del linguaggio.</p>
+            <p class="projectLanguages slideToUp makeDisappear disappear">C++</p>
         </div>
-        <div class="projectContainer" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)" onmousedown="toPage('exercism/exercism.html')">
-            <p class="projectName">Exercism</p>
-            <p class="projectDescription">Una collezione degli esercizi che ho svolto sulla piattaforma exercism.io</p>
-            <p class="projectLanguages">C++, C#, JavaScript</p>
+        <div class="projectContainer" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)" onmousedown="toPage('exercism/exercism.html')">
+            <p class="projectName slideToDown makeAppear appear">Exercism</p>
+            <p class="projectDescription slideToUp makeDisappear disappear">Una collezione degli esercizi che ho svolto sulla piattaforma exercism.io</p>
+            <p class="projectLanguages slideToUp makeDisappear disappear">C++, C#, JavaScript</p>
         </div>
-        <a class="projectContainer" href="https://github.com/less-hub/less-Pokemulator" target="_blank" onmouseover="fadeIn(this)" onmouseout="fadeOut(this)">
-            <p class="projectName">Emulatore Pokèmon</p>
-            <p class="projectDescription">Un semplice emulatore Pokèmon. Ancora in fase di sviluppo.</p>
-            <p class="projectLanguages">Ruby, Ruby2d, Gosu</p>
+        <a class="projectContainer" href="https://github.com/less-hub/less-Pokemulator" target="_blank" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)">
+            <p class="projectName slideToDown makeAppear appear">Emulatore Pokèmon</p>
+            <p class="projectDescription slideToUp makeDisappear disappear">Un semplice emulatore Pokèmon. Ancora in fase di sviluppo.</p>
+            <p class="projectLanguages slideToUp makeDisappear disappear">Ruby, Ruby2d, Gosu</p>
         </a>
       </div>
     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="public/js/index.js"></script>
+  <script src="public/js/fade.js"></script>
+  <script src="public/js/slide.js"></script>
 </body>
 </html>
