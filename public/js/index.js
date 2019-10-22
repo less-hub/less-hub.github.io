@@ -45,3 +45,7 @@ containerPartIndexOff = function (elem) {
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
 }
+
+toggleContentMobile = function (divToChange) {
+  toggleContent(document.body.getElementsByClassName("projectContainerMobile")[0].getElementsByClassName("projectContainer")[divToChange]);
+}
