@@ -9,7 +9,7 @@
   color: var(--main-black);
 }
 
-#allLanguagesContainer {
+.allLanguagesContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
