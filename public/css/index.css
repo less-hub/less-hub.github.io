@@ -127,4 +127,12 @@
       transition: opacity .5s linear;
 
   }
+
+  .projectButton {
+    height: 15rem;
+    width: 10%;
+    font-size: 3rem;
+    background-color: var(--main-white);
+    color: var(--main-black);
+  }
 }
