@@ -52,3 +52,60 @@
     transition: opacity .5s linear;
 
 }
+
+@media only screen and (max-device-width: 480px) {
+  #allProjectsContainer {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+  }
+
+  .projectContainer {
+      width: 80%;
+      height: 15rem;
+      margin: 1%;
+
+      text-decoration: none;
+
+      background-color: #3c3744;
+      text-align: center;
+      color: #fbfff1;
+      border-radius: 1%;
+
+      cursor: pointer;
+
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .projectName {
+      font-size: 2rem;
+      padding: 0 2%;
+
+      transition: opacity .5s linear;
+  }
+
+  .projectDescription {
+      position: absolute;
+      top: 2%;
+      opacity: 0;
+
+      width: 95%;
+
+      transition: opacity .5s linear;
+  }
+
+  .projectLanguages {
+      position: absolute;
+      bottom: 2%;
+      opacity: 0;
+
+      transition: opacity .5s linear;
+
+  }
+}
