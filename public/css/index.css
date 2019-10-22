@@ -73,12 +73,17 @@
   .projectContainerMobile {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .projectContainer {
+    width: 90%;
+    height: 25rem;
   }
 
   .projectButton {
-    height: 15rem;
+    height: 25rem;
     width: 10%;
     font-size: 3rem;
     background-color: var(--main-white);
