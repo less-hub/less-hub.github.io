@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/cppmain.css">
   <link rel="stylesheet" href="../public/css/animations.css">
-  <link rel="stylesheet" href="../public/css/css/all.css">
+  <link rel="stylesheet" href="../public/css/animations/fade.css">
+  <link rel="stylesheet" href="../public/css/animations/slide.css">
+  <link rel="stylesheet" href="../public/css/animations/containerwidth.css">  <link rel="stylesheet" href="../public/css/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
@@ -28,35 +30,71 @@
     <div class="mainPage">
       <h2 class="mainTitle">C++ Reference</h2>
       <div class="allPartsContainer">
-        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
-            <p class="partName">Parte 1</p>
-            <div class="partInfo">
+        <div class="partContainer makeContainerSmaller smallerContainer" onmouseover="containerWidth(this); containerPartIndexOn(this);" onmouseout="containerWidth(this); containerPartIndexOff(this);" onmousedown="toPage('#part1')">
+            <p class="partName slideToDown makeAppear appear">Parte 1</p>
+            <div class="partInfo slideToUp makeDisappear disappear">
                 <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
                 <ol class="partIndex">
-                    <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
                 </ol>
             </div>
         </div>
-        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
-            <p class="partName">Parte 2</p>
-            <div class="partInfo">
+        <div class="partContainer makeContainerSmaller smallerContainer" onmouseover="containerWidth(this); containerPartIndexOn(this);" onmouseout="containerWidth(this); containerPartIndexOff(this);" onmousedown="toPage('#part1')">
+            <p class="partName slideToDown makeAppear appear">Parte 1</p>
+            <div class="partInfo slideToUp makeDisappear disappear">
                 <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
                 <ol class="partIndex">
-                    <li><a href="#intro">TBD</a></li>
-                </ol>
-            </div>
-        </div>
-        <div class="partContainer" onmouseover="openContainer(this)" onmouseout="closeContainer(this)" onmousedown="toPage('#part1')">
-            <p class="partName">Parte 3</p>
-            <div class="partInfo">
-                <p class="partDescription">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard</p>
-                <ol class="partIndex">
-                    <li><a href="#intro">TBD</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
+                  <li><a href="parts/1.html#intro">Introduzione</a></li>
                 </ol>
             </div>
         </div>
       </div>
     </div>
-  <script src="../public/js/index.js"></script>
-</body>
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/fade.js"></script>
+    <script src="../public/js/slide.js"></script>
+    <script src="../public/js/width.js"></script></body>
 </html>

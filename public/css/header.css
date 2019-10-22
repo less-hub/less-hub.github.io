@@ -25,6 +25,8 @@ header {
     background-color: #3c3744;
 
     color: #fbfff1;
+
+    z-index: 1000;
 }
 
 #logo {

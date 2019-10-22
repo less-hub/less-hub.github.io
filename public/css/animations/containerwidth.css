@@ -1,0 +1,41 @@
+@-webkit-keyframes container-bigger {
+    0% { width: 31%; }
+  100% { width: 90%; }
+}
+
+@-moz-keyframes container-bigger {
+    0% { width: 31%; }
+  100% { width: 90%; }
+}
+
+@-webkit-keyframes container-smaller {
+    0% { width: 90%; }
+  100% { width: 31%; }
+}
+
+@-moz-keyframes container-smaller {
+    0% { width: 90%; }
+  100% { width: 31%; }
+}
+
+.makeContainerBigger {
+    -webkit-animation: container-bigger .5s ease-out;
+    -moz-animation: container-bigger .5s ease-out;
+}
+
+.makeContainerSmaller {
+    -webkit-animation: container-smaller .5s ease-out;
+    -moz-animation: container-smaller .5s ease-out;
+}
+
+.biggerContainer {
+  width: 90%;
+}
+
+.smallerContainer {
+  width: 31%;
+}
+
+.partContainer.biggerContainer {
+  width: 90%;
+}

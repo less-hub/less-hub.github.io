@@ -27,3 +27,33 @@
     -webkit-animation: slide-up .5s ease-out;
     -moz-animation: slide-up .5s ease-out;
 }
+
+@-webkit-keyframes slide-right {
+    0% { -webkit-transform: translate(-100%, 0); }
+  100% { -webkit-transform: translate(0, 0); }
+}
+
+@-moz-keyframes slide-right {
+    0% { -moz-transform: translate(-100%, 0); }
+  100% { -moz-transform: translate(0, 0); }
+}
+
+@-webkit-keyframes slide-left {
+    0% { -webkit-transform: translate(0, 0); }
+  100% { -webkit-transform: translate(-100%, 0); }
+}
+
+@-moz-keyframes slide-left {
+    0% { -moz-transform: translate(0, 0); }
+  100% { -moz-transform: translate(-100%, 0); }
+}
+
+.slideToRight {
+    -webkit-animation: slide-left .5s ease-out;
+    -moz-animation: slide-left .5s ease-out;
+}
+
+.slideToLeft {
+    -webkit-animation: slide-right .5s ease-out;
+    -moz-animation: slide-right .5s ease-out;
+}
