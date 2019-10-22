@@ -1,0 +1,41 @@
+@-webkit-keyframes container-heigher {
+    0% { height: 15rem; }
+  100% { height: 45rem; }
+}
+
+@-moz-keyframes container-heigher {
+    0% { height: 15rem; }
+  100% { height: 45rem; }
+}
+
+@-webkit-keyframes container-shorter {
+    0% { height: 45rem; }
+  100% { height: 15rem; }
+}
+
+@-moz-keyframes container-shorter {
+    0% { height: 45rem; }
+  100% { height: 15rem; }
+}
+
+.makeContainerHeigher {
+    -webkit-animation: container-heigher .5s ease-out;
+    -moz-animation: container-heigher .5s ease-out;
+}
+
+.makeContainerShorter {
+    -webkit-animation: container-shorter .5s ease-out;
+    -moz-animation: container-shorter .5s ease-out;
+}
+
+.higherContainer {
+  height: 45rem;
+}
+
+.shorterContainer {
+  height: 15rem;
+}
+
+.languageContainer.higherContainer {
+  height: 45rem;
+}

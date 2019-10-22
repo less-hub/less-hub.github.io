@@ -49,35 +49,20 @@ closeContainer = function (elem) {
     y[0].style.display = "none";
 }
 
-/*
-openContainerHeight = function(elem) {
-  let x = elem.getElementsByTagName("p");
-  let y = elem.getElementsByTagName("ul");
-
-  x[0].style.top = "80%";
-
-  y[0].style.display = "block";
-
-  y[0].classList.remove("makeDisappear");
-  y[0].classList.remove("disappear");
-  y[0].classList.add("makeAppear");
-  y[0].classList.add("appear");
+containerHeight = function(elem) {
+  toggleContent(elem);
+  setHeight(elem);
 }
 
-closeContainerHeight = function(elem) {
-  let x = elem.getElementsByTagName("p");
-  let y = elem.getElementsByTagName("ul");
-
-  x[0].style.top = "50%";
-
-  y[0].classList.remove("makeAppear");
-  y[0].classList.remove("appear");
-  y[0].classList.add("makeDisappear");
-  y[0].classList.add("disappear");
-
-  y[0].style.display = "none";
+containerLanguageDescriptionOn = function (elem) {
+  let x = elem.getElementsByClassName("languageDescription");
+  x[0].style.display = "block";
 }
-*/
+
+containerLanguageDescriptionOff = function (elem) {
+  let x = elem.getElementsByClassName("languageDescription");
+  x[0].style.display = "none";
+}
 
 toPage = function (pathToPage) {
     location.href=`${pathToPage}`;
