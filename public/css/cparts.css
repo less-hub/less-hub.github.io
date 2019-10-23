@@ -105,6 +105,14 @@ h3 {
     text-align: center;
   }
 
+  .mainPage p {
+    font-size: 3rem;
+  }
+
+  .mainPage > pre {
+    font-size: 3.2rem;
+  }
+
   .codeCommentsContainer {
     display: none;
   }
