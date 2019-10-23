@@ -216,8 +216,7 @@ header > a:hover {
 
 
   .headerMobile {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     height: 30%;
