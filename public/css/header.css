@@ -124,8 +124,7 @@ header > a:hover {
   .backgroundLogo {
     border: .3rem solid var(--main-black);
     color: var(--main-black);
-    width: 12rem;
-    height: 22%;
+    width: 10rem;
     border-radius: 50%;
     font-size: 8rem;
     margin-top: 2rem;
@@ -133,7 +132,7 @@ header > a:hover {
     z-index: -1;
 
     position: fixed;
-    top: -2rem;
+    top: 0;
     left: 50%;
 
     transform: translate(-50%, 0);
