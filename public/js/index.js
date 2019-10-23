@@ -47,6 +47,12 @@ toPage = function (pathToPage) {
 }
 
 toggleContentMobile = function (divToChange) {
+  let x = document.body.getElementsByClassName("projectButton")[divToChange];
+  if (x.value == "+")
+    x.value = "-"
+  else
+    x.value = "+"
+    
   toggleContent(document.body.getElementsByClassName("projectContainerMobile")[divToChange].getElementsByClassName("projectContainer")[0]);
 }
 
