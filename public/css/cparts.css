@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 .navigatorIndexContainer {
   height: 40%;
   width: 100%;
@@ -91,4 +95,16 @@ h3 {
 
 .codeComment > ul {
   color: #3c3744;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .mainPage {
+    top: 22%;
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  .codeCommentsContainer {
+    display: none;
+  }
 }
