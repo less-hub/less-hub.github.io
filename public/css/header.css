@@ -127,12 +127,11 @@ header > a:hover {
     width: 10rem;
     border-radius: 50%;
     font-size: 8rem;
-    margin-top: 2rem;
     text-align: center;
     z-index: -1;
 
     position: fixed;
-    top: 0;
+    top: 11%;
     left: 50%;
 
     transform: translate(-50%, 0);
