@@ -26,7 +26,7 @@
         </nav>
     </header>
     <div class="mainPage">
-      <h2 class="mainTitle">I miei progetti</h2>
+      <h2 class="mainTitle mobileHide">I miei progetti</h2>
       <div class="allProjectsContainer mobileHide">
         <div class="projectContainer" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)" onmousedown="toPage('cpp/cpp.html')">
             <p class="projectName slideToDown makeAppear appear">C++ Reference</p>
@@ -50,6 +50,10 @@
         </a>
       </div>
 
+      <div class="headerMobile mobileShow">
+        <h2 class="mainTitle">I miei progetti</h2>
+        <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars"></i></div>
+      </div>
         <div class="projectContainerMobile mobileShow">
           <div class="projectContainer" onmousedown="toPage('cpp/cpp.html')">
               <p class="projectName slideToDown makeAppear appear">C++ Reference</p>

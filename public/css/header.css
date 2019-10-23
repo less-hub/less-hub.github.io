@@ -196,7 +196,7 @@ header > a:hover {
 
   .mainPage {
       position: absolute;
-      top: 0;
+      top: 32%;
       left: 0;
 
       width: 100%;
@@ -205,9 +205,34 @@ header > a:hover {
       padding-left: 0;
   }
 
+
+  .headerMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(251, 255, 241, 0.9);
+    border-bottom: 2px solid var(--main-black);
+  }
+
   .mainTitle {
-      text-align: center;
-      font-size: 5rem;
-      color: #3c3744;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--main-black);
+  }
+
+  .menuButton {
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
   }
 }
