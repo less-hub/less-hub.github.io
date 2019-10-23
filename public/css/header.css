@@ -116,7 +116,7 @@ header > a:hover {
 
   header {
       position: fixed;
-      left: -20%;
+      left: -100%;
       top: 0;
 
       width: 20%;
