@@ -77,7 +77,7 @@ $( document ).ready(function() {
           }
       });
 
-      $("html, body, #wrapper").css({ height: $(window).height() });
+      $("html, body, #scrollableMobile").css({ height: $(window).height() });
 
     }
  });

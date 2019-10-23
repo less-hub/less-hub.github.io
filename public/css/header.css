@@ -214,7 +214,7 @@ header > a:hover {
       padding-left: 0;
   }
 
-  .scrollableMobile {
+  #scrollableMobile {
     padding-top: 60%;
     overflow-y: scroll;
   }
