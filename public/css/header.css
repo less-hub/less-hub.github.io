@@ -108,6 +108,7 @@ header > a:hover {
   body {
     font-family: "Muli", sans-serif;
     background-color: #fbfff1;
+    height: 100%;
 
     --main-black:#3c3744;
     --main-white:#fbfff1;
@@ -216,6 +217,7 @@ header > a:hover {
 
   #scrollableMobile {
     padding-top: 60%;
+    height: 100%;
     overflow-y: scroll;
   }
 
