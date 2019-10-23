@@ -10,4 +10,8 @@
   .projectContainer:first-child {
     margin-top: 0;
   }
+  
+  .menuArrowDown {
+    font-size: 5rem;
+  }
 }

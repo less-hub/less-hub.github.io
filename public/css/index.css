@@ -93,4 +93,8 @@
     background-color: var(--main-white);
     color: var(--main-black);
   }
+
+  .menuArrowDown {
+    font-size: 5rem;
+  }
 }
