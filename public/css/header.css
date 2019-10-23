@@ -114,11 +114,28 @@ header > a:hover {
 
 @media only screen and (max-device-width: 480px) {
   .mobileShow {
-      display: inline;
+    display: inline;
   }
 
   .mobileHide {
-      display: none;
+    display: none;
+  }
+
+  .backgroundLogo {
+    border: .3rem solid var(--main-black);
+    color: var(--main-black);
+    width: 10rem;
+    border-radius: 50%;
+    font-size: 8rem;
+    margin-top: 2rem;
+    text-align: center;
+    z-index: -1;
+
+    position: fixed;
+    top: -2rem;
+    left: 50%;
+
+    transform: translate(-50%, 0);
   }
 
   body {
