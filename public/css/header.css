@@ -142,14 +142,14 @@ header > a:hover {
       color: #fbfff1;
       width: 4rem;
       border-radius: 50%;
-      font-size: 3rem;
+      font-size: 5rem;
       margin-top: 2rem;
       text-align: center;
       cursor: pointer;
   }
 
   #logoName {
-      font-size: 1.5rem;
+      font-size: 4.2rem;
       pointer-events: none;
   }
 
@@ -181,7 +181,7 @@ header > a:hover {
 
   #navigator > li > a {
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 4rem;
       color: #fbfff1;
       transition: color .2s linear;
   }
