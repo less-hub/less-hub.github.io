@@ -209,7 +209,7 @@ header > a:hover {
 
   .headerMobile {
     position: fixed;
-    top: 0;
+    top: inherit;
     left: 0;
     height: 30%;
     width: 100%;
