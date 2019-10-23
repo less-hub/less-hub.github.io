@@ -219,6 +219,7 @@ header > a:hover {
     position: absolute;
     top: 32%;
     height: 68%;
+    width: 100%;
     overflow-y: scroll;
   }
 
