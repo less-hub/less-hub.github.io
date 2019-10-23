@@ -7,11 +7,11 @@
   <meta name="description" content="Less Homepage">
   <meta name="author" content="Less">
   <link rel="stylesheet" href="../public/css/index.css">
+  <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/animations.css">
   <link rel="stylesheet" href="../public/css/animations/fade.css">
   <link rel="stylesheet" href="../public/css/animations/slide.css">
   <link rel="stylesheet" href="../public/css/animations/containerheight.css">
-  <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/css/all.css">
   <link rel="stylesheet" href="../public/css/exercismmain.css">
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
           <li><a href="cpp.html" class="active">Exercism</a></li>
         </nav>
     </header>
-    <div class="mainPage">
+    <div class="mainPage mobileHide">
       <h2 class="mainTitle">I miei esercizi su <a href="https://exercism.io/" target="_blank">exercism.io</a></h2>
       <div class="allLanguagesContainer">
         <a class="languageContainer makeContainerShorter shorterContainer" onmouseover="containerHeight(this); containerLanguageDescriptionOn(this);" onmouseout="containerHeight(this); containerLanguageDescriptionOff(this);" href="exercism/cpp.html">
@@ -79,6 +79,29 @@ Type inference means that the compiler will often figure out the type of an iden
         </a>
       </div>
     </div>
+
+    <div class="headerMobile mobileShow">
+      <h2 class="mainTitle">I miei esercizi su <a href="https://exercism.io/">exercism.io</a></h2>
+      <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars" style="color: var(--main-black)"></i></div>
+    </div>
+    <div id="scrollableMobile">
+      <div class="projectContainerMobile mobileShow">
+        <div class="projectContainer" onmousedown="toPage('exercism/cpp.html')">
+            <p class="projectName slideToDown makeAppear appear">C++</p>
+        </div>
+      </div>
+        <div class="projectContainerMobile mobileShow">
+          <div class="projectContainer" style="margin-top: 3%;" onmousedown="toPage('exercism/csharp.html')">
+              <p class="projectName slideToDown makeAppear appear">C#</p>
+          </div>
+        </div>
+        <div class="projectContainerMobile mobileShow">
+          <div class="projectContainer" style="margin-top: 3%;" onmousedown="toPage('exercism/javascript.html')">
+              <p class="projectName slideToDown makeAppear appear">JavaScript</p>
+          </div>
+        </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../public/js/index.js"></script>
   <script src="../public/js/fade.js"></script>
   <script src="../public/js/slide.js"></script>
