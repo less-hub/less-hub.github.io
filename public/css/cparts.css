@@ -101,7 +101,7 @@ h3 {
   .mainPage {
     top: 0%;
   }
-  
+
   .mainPage p {
     font-size: 3rem;
   }
@@ -119,6 +119,10 @@ h3 {
   }
 
   .codeCommentsContainer {
+    display: none;
+  }
+
+  #toRemoveMobile {
     display: none;
   }
 }
