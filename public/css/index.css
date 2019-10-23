@@ -78,13 +78,25 @@
   }
 
   .projectContainer {
-    width: 90%;
+    width: 100%;
     height: 25rem;
+  }
+
+  .projectName {
+    font-size: 3rem;
+  }
+
+  .projectDescription {
+    font-size: 3rem;
+  }
+
+  .projectLanguages {
+    font-size: 3rem;
   }
 
   .projectButton {
     height: 10rem;
-    width: 90%;
+    width: 100%;
     font-size: 3rem;
     background-color: var(--main-white);
     color: var(--main-black);
