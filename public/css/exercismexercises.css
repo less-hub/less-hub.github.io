@@ -1,0 +1,13 @@
+@media only screen and (max-device-width: 480px) {
+  .mainPage {
+    top: 0%;
+  }
+
+  .projectContainer {
+    margin-top: 2%;
+  }
+
+  .projectContainer:first-child {
+    margin-top: 0;
+  }
+}

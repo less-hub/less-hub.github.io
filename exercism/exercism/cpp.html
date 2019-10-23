@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../../public/css/animations/fade.css">
   <link rel="stylesheet" href="../../public/css/animations/slide.css">
   <link rel="stylesheet" href="../../public/css/header.css">
+  <link rel="stylesheet" href="../../public/css/exercismexercises.css">
   <link rel="stylesheet" href="../../public/css/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
@@ -29,8 +30,13 @@
             <li><a href="cpp.html" class="active">C++</a></li>
         </nav>
     </header>
-    <div class="mainPage">
+    <div class="headerMobile mobileShow">
       <h2 class="mainTitle">I miei esercizi C++</h2>
+      <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars" style="color: var(--main-black)"></i></div>
+    </div>
+    <div class="mainPage">
+      <h2 id="intro" class="mainTitle mobileHide">I miei esercizi C++</h2>
+      <div id="scrollableMobile">
       <div class="allProjectsContainer">
         <a class="projectContainer" href="https://exercism.io/tracks/cpp/exercises/leap/solutions/cf6231784ad347dab4505c9b728f76f9" target="_blank" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)">
             <p class="projectName slideToDown makeAppear appear">Leap</p>
@@ -124,6 +130,8 @@
 
       </div>
     </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../../public/js/index.js"></script>
   <script src="../../public/js/fade.js"></script>
   <script src="../../public/js/slide.js"></script>
