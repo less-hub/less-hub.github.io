@@ -58,16 +58,22 @@ $( document ).ready(function() {
     }
 
     if (is_mobile == true) {
+      appearMenuFromTop = function (elem) {
+        elem.style.left = "0";
+      }
+
+      disappearMenuFromTop = function (elem) {
+        elem.style.left = "-100%";
+      }
+
       showMobileMenu = function () {
         let x = document.body.getElementsByTagName("header")[0];
-
-        x.style.left = "0";
+        appearMenuFromTop(x);
       }
 
       hideMobileMenu = function () {
         let x = document.body.getElementsByTagName("header")[0];
-
-        x.style.left = "-100%";
+        disappearMenuFromTop(x);
       }
 
       $(document).click(function (e) {

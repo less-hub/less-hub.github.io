@@ -138,6 +138,8 @@ header > a:hover {
       color: #fbfff1;
 
       z-index: 2000;
+
+      transition: left .4s linear;
   }
 
   #logo {
