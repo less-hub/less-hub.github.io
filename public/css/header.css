@@ -281,4 +281,8 @@ header > a:hover {
     color: var(--main-blue);
     border: none;
   }
+
+  .menuArrowDown {
+    font-size: 5rem;
+  }
 }
