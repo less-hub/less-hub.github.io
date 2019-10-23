@@ -49,3 +49,33 @@ toPage = function (pathToPage) {
 toggleContentMobile = function (divToChange) {
   toggleContent(document.body.getElementsByClassName("projectContainerMobile")[divToChange].getElementsByClassName("projectContainer")[0]);
 }
+
+$( document ).ready(function() {
+    var is_mobile = false;
+
+    if( $('.headerMobile').css('display')=='flex') {
+        is_mobile = true;
+    }
+
+    if (is_mobile == true) {
+      showMobileMenu = function () {
+        let x = document.body.getElementsByTagName("header")[0];
+
+        x.style.left = "0";
+      }
+
+      hideMobileMenu = function () {
+        let x = document.body.getElementsByTagName("header")[0];
+
+        x.style.left = "-100%";
+      }
+
+      $(document).click(function (e) {
+          var popup = $("header");
+          if (popup.is(e.target) && popup.has(e.target).length == 0) {
+              hideMobileMenu();
+          }
+      });
+
+    }
+ });

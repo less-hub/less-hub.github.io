@@ -85,6 +85,8 @@
   .projectContainer {
     width: 100%;
     height: 25rem;
+
+    margin: 0;
   }
 
   .projectName {
