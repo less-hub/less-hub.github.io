@@ -75,6 +75,11 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 2%;
+  }
+
+  .projectContainerMobile:first-child {
+    padding-top: 0;
   }
 
   .projectContainer {
