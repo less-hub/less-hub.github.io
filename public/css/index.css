@@ -1,11 +1,3 @@
-.mobileShow {
-  display: none;
-}
-
-.mobileHide {
-  display: block;
-}
-
 .allProjectsContainer {
     display: flex;
     flex-flow: row wrap;
@@ -62,14 +54,6 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-  .mobileShow {
-      display: inline;
-  }
-
-  .mobileHide {
-      display: none;
-  }
-
   .projectContainerMobile {
     display: flex;
     flex-flow: column nowrap;
