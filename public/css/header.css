@@ -161,16 +161,16 @@ header > a:hover {
   #logo {
       border: .3rem solid #fbfff1;
       color: #fbfff1;
-      width: 6rem;
+      width: 10rem;
       border-radius: 50%;
-      font-size: 5rem;
+      font-size: 8rem;
       margin-top: 2rem;
       text-align: center;
       cursor: pointer;
   }
 
   #logoName {
-      font-size: 4.2rem;
+      font-size: 6rem;
       pointer-events: none;
   }
 
