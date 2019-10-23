@@ -99,12 +99,9 @@ h3 {
 
 @media only screen and (max-device-width: 480px) {
   .mainPage {
-    top: 22%;
-    width: 80%;
-    padding-left: 5%;
-    text-align: center;
+    top: 0%;
   }
-
+  
   .mainPage p {
     font-size: 3rem;
   }

@@ -35,12 +35,13 @@
             </li>
         </nav>
     </header>
+    <div class="headerMobile mobileShow">
+      <h2 class="mainTitle">C++ Parte 1</h2>
+      <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars" style="color: var(--main-black)"></i></div>
+    </div>
     <div class="mainPage">
       <h2 id="intro" class="mainTitle mobileHide">C++ Parte 1</h2>
-      <div class="headerMobile mobileShow">
-        <h2 class="mainTitle">C++ Parte 1</h2>
-        <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars" style="color: var(--main-black)"></i></div>
-      </div>
+      <div id="scrollableMobile">
       <p>
         Questa parte parla di tut cos bell Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -184,6 +185,7 @@
       </div>
       <!-- End of chapter -->
 
+    </div>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../../public/js/index.js"></script>
