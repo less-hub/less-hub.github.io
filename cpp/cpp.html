@@ -6,6 +6,7 @@
   <title>Less C++ Reference</title>
   <meta name="description" content="Less C++ reference">
   <meta name="author" content="Less">
+  <link rel="stylesheet" href="../public/css/index.css">
   <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/cppmain.css">
   <link rel="stylesheet" href="../public/css/animations.css">
@@ -94,7 +95,34 @@
       </div>
     </div>
 
-    
+    <div class="headerMobile mobileShow">
+      <h2 class="mainTitle">C++ Reference</h2>
+      <div class="menuButton" onmousedown="showMobileMenu();"><i class="fas fa-bars" style="color: var(--main-black)"></i></div>
+    </div>
+    <div id="scrollableMobile">
+      <div class="projectContainerMobile mobileShow">
+        <a class="projectContainer" href="parts/1.html">
+            <p class="projectName slideToDown makeAppear appear">Parte 1</p>
+            <p class="projectDescription slideToUp makeDisappear disappear">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard.</p>
+        </a>
+        <input class="projectButton" type="button" onclick="toggleContentMobile(0);" value="+">
+      </div>
+        <div class="projectContainerMobile mobileShow">
+          <a class="projectContainer" href="parts/1.html">
+              <p class="projectName slideToDown makeAppear appear">Parte 2</p>
+              <p class="projectDescription slideToUp makeDisappear disappear">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard.</p>
+          </a>
+          <input class="projectButton" type="button" onclick="toggleContentMobile(1);" value="+">
+        </div>
+        <div class="projectContainerMobile mobileShow">
+          <a class="projectContainer" href="parts/1.html">
+              <p class="projectName slideToDown makeAppear appear">Parte 3</p>
+              <p class="projectDescription slideToUp makeDisappear disappear">Questa parte si basa sui fondamentali del C++: dai tipi di dati alle librerie standard.</p>
+          </a>
+          <input class="projectButton" type="button" onclick="toggleContentMobile(2);" value="+">
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../public/js/index.js"></script>
     <script src="../public/js/fade.js"></script>
     <script src="../public/js/slide.js"></script>
