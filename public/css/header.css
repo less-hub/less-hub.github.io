@@ -124,7 +124,8 @@ header > a:hover {
   .backgroundLogo {
     border: .3rem solid var(--main-black);
     color: var(--main-black);
-    width: 10rem;
+    width: 12rem;
+    height: 22%;
     border-radius: 50%;
     font-size: 8rem;
     margin-top: 2rem;
