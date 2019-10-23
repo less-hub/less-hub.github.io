@@ -47,5 +47,5 @@ toPage = function (pathToPage) {
 }
 
 toggleContentMobile = function (divToChange) {
-  toggleContent(document.body.getElementsByClassName("projectContainerMobile")[divToChange].getElementsByClassName("projectContainer")[divToChange]);
+  toggleContent(document.body.getElementsByClassName("projectContainerMobile")[divToChange].getElementsByClassName("projectContainer")[0]);
 }
