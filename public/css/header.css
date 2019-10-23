@@ -113,6 +113,8 @@ header > a:hover {
     --main-black:#3c3744;
     --main-white:#fbfff1;
     --main-blue:#9bc1bc;
+
+    overflow-y: hidden;
   }
 
   header {
@@ -218,6 +220,7 @@ header > a:hover {
   #scrollableMobile {
     position: absolute;
     top: 32%;
+    left: -0.1%;
     height: 68%;
     width: 100%;
     overflow-y: scroll;
