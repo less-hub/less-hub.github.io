@@ -113,6 +113,14 @@ h3 {
     font-size: 3.2rem;
   }
 
+  h3 {
+    font-size: 4rem;
+  }
+
+  .codeAndLabel > pre {
+    font-size: 3.2rem;
+  }
+
   .codeCommentsContainer {
     display: none;
   }
