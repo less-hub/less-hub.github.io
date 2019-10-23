@@ -140,7 +140,7 @@ header > a:hover {
   #logo {
       border: .3rem solid #fbfff1;
       color: #fbfff1;
-      width: 4rem;
+      width: 6rem;
       border-radius: 50%;
       font-size: 5rem;
       margin-top: 2rem;
@@ -195,6 +195,14 @@ header > a:hover {
       pointer-events: none;
   }
 
+  .logoMail {
+    font-size: 3rem;
+  }
+
+  .logoGitHub {
+    font-size: 3rem;
+  }
+
   .mainPage {
       position: absolute;
       top: 32%;
@@ -209,7 +217,7 @@ header > a:hover {
 
   .headerMobile {
     position: fixed;
-    top: inherit;
+    top: 0;
     left: 0;
     height: 30%;
     width: 100%;
