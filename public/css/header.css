@@ -264,6 +264,5 @@ header > a:hover {
     font-size: 7rem;
     color: var(--main-blue);
     border: none;
-    margin-top: -10%;
   }
 }
