@@ -134,7 +134,7 @@ header > a:hover {
     top: 11%;
     left: 50%;
 
-    transform: translate(-50%, -11%);
+    transform: translate(-50%, -50%);
   }
 
   body {
