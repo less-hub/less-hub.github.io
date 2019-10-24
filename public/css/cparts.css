@@ -30,12 +30,12 @@ body {
 .navigatorIndex > li > a {
   text-decoration: none;
 
-  color: #fbfff1;
+  color: var(--main-white);
   transition: color .2s linear;
 }
 
 .navigatorIndex > li > a:hover {
-  color: #9bc1bc;
+  color: var(--main-blue);
 }
 
 h3 {
@@ -45,7 +45,7 @@ h3 {
 
 .codeAndLabel > pre {
   font-size: 1.2rem;
-  border-left: 2px solid #9bc1bc;
+  border-left: 2px solid var(--main-blue);
   padding-left: 10%;
 }
 
@@ -54,17 +54,17 @@ h3 {
 }
 
 .codeAndLabel code > strong {
-  color: #9bc1bc;
+  color: var(--main-blue);
 }
 
 .codeAndLabel .codeLabel {
-  border-left: 2px solid #9bc1bc;
+  border-left: 2px solid var(--main-blue);
   padding-left: 10%;
   font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .mainPage p {
-  color: #3c3744;
+  color: var(--main-black);
   font-size: 1.2rem;
 }
 
@@ -85,7 +85,7 @@ h3 {
 
 .codeCommentsContainer .codeCommentHead {
   font-size: 1.5rem;
-  color: #9bc1bc;
+  color: var(--main-blue);
 }
 
 .codeCommentsContainer .codeComment {
@@ -94,7 +94,7 @@ h3 {
 }
 
 .codeComment > ul {
-  color: #3c3744;
+  color: var(--main-black);
 }
 
 @media only screen and (max-device-width: 480px) {

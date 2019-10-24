@@ -24,9 +24,9 @@
 
     text-decoration: none;
 
-    background-color: #3c3744;
+    background-color: var(--main-black);
     text-align: center;
-    color: #fbfff1;
+    color: var(--main-white);
     border-radius: 1%;
 
     cursor: pointer;

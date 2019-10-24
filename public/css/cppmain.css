@@ -11,9 +11,9 @@
     height: 15rem;
     margin: 1%;
 
-    background-color: #3c3744;
+    background-color: var(--main-black);
     text-align: center;
-    color: #fbfff1;
+    color: var(--main-white);
     border-radius: 1%;
 
     position: relative;
@@ -60,10 +60,10 @@
 }
 
 .partIndex > li > a {
-    color: #fbfff1;
+    color: var(--main-white);
     text-decoration: none;
 }
 
 .partIndex > li > a:hover {
-    color: #9bc1bc;
+    color: var(--main-blue);
 }

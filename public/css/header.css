@@ -8,7 +8,7 @@
 
 body {
   font-family: "Muli", sans-serif;
-  background-color: #fbfff1;
+  background-color: var(--main-white);
 
   --main-black:#3c3744;
   --main-white:#fbfff1;
@@ -30,16 +30,16 @@ header {
     justify-content: flex-start;
     align-items: center;
 
-    background-color: #3c3744;
+    background-color: var(--main-black);
 
-    color: #fbfff1;
+    color: var(--main-white);
 
     z-index: 1000;
 }
 
 #logo {
-    border: .3rem solid #fbfff1;
-    color: #fbfff1;
+    border: .3rem solid var(--main-white);
+    color: var(--main-white);
     width: 4rem;
     border-radius: 50%;
     font-size: 3rem;
@@ -54,17 +54,17 @@ header {
 }
 
 header > a {
-    color: #fbfff1;
+    color: var(--main-white);
     text-decoration: none;
     transition: color .2s linear;
 }
 
 header > a:hover {
-    color: #9bc1bc;
+    color: var(--main-blue);
 }
 
 #navigator {
-    border-top: .3rem solid #fbfff1;
+    border-top: .3rem solid var(--main-white);
     width: 100%;
     padding-top: 2rem;
     margin-top: 3rem;
@@ -82,16 +82,16 @@ header > a:hover {
 #navigator > li > a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: #fbfff1;
+    color: var(--main-white);
     transition: color .2s linear;
 }
 
 #navigator > li > a:hover {
-    color: #9bc1bc;
+    color: var(--main-blue);
 }
 
 #navigator > li > .active {
-    color: #9bc1bc;
+    color: var(--main-blue);
     pointer-events: none;
 }
 
@@ -109,7 +109,7 @@ header > a:hover {
 .mainTitle {
     text-align: center;
     font-size: 2rem;
-    color: #3c3744;
+    color: var(--main-black);
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -139,12 +139,12 @@ header > a:hover {
 
   body {
     font-family: "Muli", sans-serif;
-    background-color: #fbfff1;
+    background-color: var(--main-white);
     height: 68%;
 
-    --main-black:#3c3744;
-    --main-white:#fbfff1;
-    --main-blue:#9bc1bc;
+    --main-black:var(--main-black);
+    --main-white:var(--main-white);
+    --main-blue:var(--main-blue);
 
     overflow-y: hidden;
   }
@@ -165,9 +165,9 @@ header > a:hover {
       justify-content: flex-start;
       align-items: center;
 
-      background-color: #3c3744;
+      background-color: var(--main-black);
 
-      color: #fbfff1;
+      color: var(--main-white);
 
       z-index: 2000;
 
@@ -175,8 +175,8 @@ header > a:hover {
   }
 
   #logo {
-      border: .3rem solid #fbfff1;
-      color: #fbfff1;
+      border: .3rem solid var(--main-white);
+      color: var(--main-white);
       width: 10rem;
       border-radius: 50%;
       font-size: 8rem;
@@ -191,17 +191,17 @@ header > a:hover {
   }
 
   header > a {
-      color: #fbfff1;
+      color: var(--main-white);
       text-decoration: none;
       transition: color .2s linear;
   }
 
   header > a:hover {
-      color: #9bc1bc;
+      color: var(--main-blue);
   }
 
   #navigator {
-      border-top: .3rem solid #fbfff1;
+      border-top: .3rem solid var(--main-white);
       width: 100%;
       padding-top: 2rem;
       margin-top: 3rem;
@@ -219,16 +219,16 @@ header > a:hover {
   #navigator > li > a {
       text-decoration: none;
       font-size: 4rem;
-      color: #fbfff1;
+      color: var(--main-white);
       transition: color .2s linear;
   }
 
   #navigator > li > a:hover {
-      color: #9bc1bc;
+      color: var(--main-blue);
   }
 
   #navigator > li > .active {
-      color: #9bc1bc;
+      color: var(--main-blue);
       pointer-events: none;
   }
 
