@@ -116,6 +116,10 @@ h3 {
   color: var(--main-blue);
 }
 
+h4 {
+  font-size: 1.4rem;
+}
+
 @media only screen and (max-device-width: 480px) {
   .mainPage {
     top: 0%;
