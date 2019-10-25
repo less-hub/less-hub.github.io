@@ -77,6 +77,44 @@
 
           <h4 id="bool">Booleani</h4>
           <p>
+            Un booleano può avere valore <strong>true</strong> oppure <strong>false</strong>, ed è utilizzato per esprimere i risultati di operazioni logiche. Durante le operazioni, ogni int può
+            essere convertiti in un bool, ma mai viceversa (tranne per i valori 0 ed 1). Gli interi non zero sono convertiti in 1, 0 in false. Ad esempio:
+            <div class="codeContainer">
+              <div class="codeAndLabel">
+                <p class="codeLabel" id="list10">Listato 1.0</p>
+                <pre><code>
+                  bool b1 = 7;          // 7!=0, quindi b diventa true.
+                  bool b2 {7};          // errore: narrowing
+
+                  int i1 = true;        // i1 diventa 1
+                  int i2 {true};        // i1 diventa 1
+                </code></pre>
+              </div>
+            </div>
+          </p>
+
+          <p>
+            Un puntatore può essere implicitamente convertito in bool. Un puntatore non null viene convertito in true; i puntatori con valore <strong>nullptr</strong> sono convertiti in false:
+            <div class="codeContainer">
+              <div class="codeAndLabel">
+                <p class="codeLabel" id="list11">Listato 1.1</p>
+                <pre><code>
+                  void g(int* p)
+                  {
+                    bool b = p;           // si riduce a true o false
+                    bool b2 {p!=nullptr}; // test esplicito con nullptr
+
+                    if (p) {              // equivalente di p!=nullptr (se p è valido)
+                      // . . .
+                    }
+                  }
+                </code></pre>
+              </div>
+            </div>
+          </p>
+
+          <h4 id="char">Tipi di carattere</h4>
+          <p>
             
           </p>
           <!-- End of chapter -->
