@@ -52,8 +52,20 @@
           <!-- Chapter -->
           <div id="tipiEDichiarazioni" class="chapter">
             <h3>Tipi e dichiarazioni</h3>
+            <p>In questo capitolo sono affrontati i seguenti temi:</p>
+            <ul class="list clickableList">
+              <li><a href="#tipiFondamentali">Tipi Fondamentali</a></li>
+              <li><a href="#bool">Tipi Booleani</a></li>
+              <li><a href="#char">Tipi di carattere</a></li>
+              <li><a href="#int">Tipi di interi</a></li>
+              <li><a href="#float">Tipi a virgola mobile</a></li>
+              <li><a href="#tipiDiLetterali">Tipi di letterali</a></li>
+              <li><a href="#dichiarazioni">Dichiarazioni</a></li>
+              <li><a href="#ambito">Ambito (campo di visibilità)</a></li>
+            </ul>
 
-            <h4>Tipi fondamentali</h4>
+            <h4 id="tipiFondamentali">Tipi fondamentali</h4>
+
             <p>
               Il C++ ha un set di tipi fondamentali corrispondenti alle più comuni unità di base di memorizzazione di un computer, e ha i modi più comuni per usarli come dati.
             </p>
@@ -64,7 +76,6 @@
               <li><a  href="#float">Tipi a virgola mobile <strong>double, long double</strong>, per i valori con virgola</a></li>
               <li><a  href="#void">Un tipo per assenza di informazioni <strong>void</strong></a></li>
             </ul>
-          </div>
 
           <p>
             I tipi booleani, char e int sono detti <em>tipi integrali</em>.</br>
@@ -115,9 +126,208 @@
 
           <h4 id="char">Tipi di carattere</h4>
           <p>
+            Sono utilizzati molti set di caratteri e codifiche dei set. Per rispecchiare questa varietà il C++ fornisce numerosi tipi:
+
+            <ul class="list">
+              <li><strong>char</strong>: Il tipo di carattere predefinito, utilizzato per il testo nei programmi. Di solito è di 8 bit.</li>
+              <li><strong>signed char</strong>: Come char, ma in grado di avere un segno: può contenere valori positivi e negativi.</li>
+              <li><strong>unsigned char</strong>: Come char, ma con la garanzia di non avere segno.</li>
+              <li><strong>wchar_t</strong>: In grado di contenere caratteri più grandi, come ad esempio l'UNICODE.</li>
+              <li><strong>char16_t</strong>: In grado di contenere 16 bit, come UTF-16.</li>
+              <li><strong>char32_t</strong>: In grado di contenere 32 bit, come UTF-32.</li>
+            </ul>
+          </p>
+          <p>
+            Quasi universalmente, un <strong>char</strong> ha 8 bit, e di conseguenza contenere uno tra i 256 diversi valori. Anche se i tipi di set di carattere sono difficili da standardizzare
+            (basti pensare al cirillico e il cinese, ad esempio), si può ragionevolmente presupporre che il set includa le cifre decimali, i 26 caratteri alfabetici della lingua inglese e acluni
+            caratteri di interpunzione di base. Ciascun carattere ha un valore intero nel set di caratteri usato dell'implementazione: ad esempio, il valore di '<strong>b</strong>' è <strong>98</strong>.
+          </p>
+
+          <h4 id="int">Tipi interi</h4>
+          <p>
+            Come <strong>char</strong>, ciascun tipo intero può avere 3 forme: <strong>int</strong> "semplice", <strong>signed</strong> int, <strong>unsigned</strong> int. Inoltre esistono i seguenti
+            tipi, i quali dipendono dall'intervallo dell'intero che si intende memorizzare:
+            <ul class="list">
+              <li><strong>byte</strong></li>
+              <li><strong>short</strong></li>
+              <li><strong>int</strong></li>
+              <li><strong>long</strong></li>
+              <li><strong>long long</strong></li>
+            </ul>
+          </p>
+
+          <h4 id="float">Tipi a virgola mobile</h4>
+          <p>
+              Per default, un letterale a virgola mobile è di tipo <strong>double</strong>. Si possono anche usare le notazioni esponenziali, come ad esempio <strong>1.23e-15</strong>. Da notare l'assenza
+              degli spazi.
+          </p>
+
+          <h4 id="tipiDiLetterali">Tipi di Letterali</h4>
+          <p>
+            In generale, il tipo di un letterale intero dipende dalla sua <strong>forma</strong>(come int, float ecc.), dal suo <strong>valore</strong> e dal suo <strong>suffisso</strong>.
+              Di seguito sono elencati alcuni dei prefissi e suffissi dei <strong>letterali aritmetici</strong>:
+          </p>
+
+          <table>
+            <tr>
+              <th><strong>Notazione</strong></th>
+              <th><strong>&nbsp;</strong></th>
+              <th><strong>*fisso</strong></th>
+              <th><strong>Significato</strong></th>
+              <th><strong>Esempio</strong></th>
+            <tr>
+            <tr>
+              <td>0</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>ottale</td>
+              <td>0776</td>
+            </tr>
+            <tr>
+              <td>0x</td>
+              <td>0X</td>
+              <td>prefisso</td>
+              <td>esadecimale</td>
+              <td>0xff</td>
+            </tr>
+            <tr>
+              <td>u</td>
+              <td>U</td>
+              <td>suffisso</td>
+              <td>unsigned</td>
+              <td>12U</td>
+            </tr>
+            <tr>
+              <td>l</td>
+              <td>L</td>
+              <td>suffisso</td>
+              <td>long</td>
+              <td>2000L</td>
+            </tr>
+            <tr>
+              <td>ll</td>
+              <td>LL</td>
+              <td>suffisso</td>
+              <td>long long</td>
+              <td>2000LL</td>
+            </tr>
+            <tr>
+              <td>f</td>
+              <td>F</td>
+              <td>suffisso</td>
+              <td>float</td>
+              <td>10f</td>
+            </tr>
+            <tr>
+              <td>e</td>
+              <td>E</td>
+              <td>infisso</td>
+              <td>virgola mobile</td>
+              <td>10e-4</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>&nbsp;</td>
+              <td>infisso</td>
+              <td>virgola mobile</td>
+              <td>12.3</td>
+            </tr>
+            <tr>
+              <td>'</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>char</td>
+              <td>'c'</td>
+            </tr>
+            <tr>
+              <td>u'</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>char16_t</td>
+              <td>u'c'</td>
+            </tr>
+            <tr>
+              <td>U'</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>char32_t</td>
+              <td>U'c'</td>
+            </tr>
+            <tr>
+              <td>L'</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>wchar_t</td>
+              <td>L'c'</td>
+            </tr>
+            <tr>
+              <td>"</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>string</td>
+              <td>"hello"</td>
+            </tr>
+            <tr>
+              <td>R"</td>
+              <td>&nbsp;</td>
+              <td>prefisso</td>
+              <td>stringa grezza</td>
+              <td>R"(\b)"</td>
+            </tr>
+          </table>
+
+          <p>
+            Questi possono essere combinati tra di loro, come ad esempio: <strong>1ULL</strong> (1 Unsigned Long Long). Inoltre un utente può definire i propri suffissi, come vedremo in seguito.
+          </p>
+
+          <h4 id="dichiarazioni">Dichiarazioni</h4>
+          <p>
+            Prima di poter usare un nome ( <strong>identificatore</strong> ) in C++, è necessario dichiararlo. Ovvero, il suo tipo deve essere specificato per informare il compilatore del genere di entità
+            a cui il nome si riferisce. Qualsiasi dichiarazione che specifichi un valore è una <strong>definizione</strong>. Evitando troppe semplificazioni radicali, possiamo considerare che le dichiarazioni
+            siano composte da cinque parti <em>ordinate</em>:
+            <ol class="list">
+              <li>Specificatori prefissi <em>opzionali</em>: <strong>static</strong> o <strong>virtual</strong></li>
+              <li>Un tipo base: <strong>vector&lt;double&gt;</strong> o <strong>const int</strong></li>
+              <li>Un dichiaratore che opzionalmente include un nome: <strong>[n]</strong> oppure <strong>*</strong></li>
+              <li>Specificatori di funzione suffissi opzionali: <strong>const</strong> o <strong>noexcept</strong></li>
+              <li>Un inizializzatore o corpo della funzione opzionale: <strong>={75.3}</strong> o <strong>{return x;}</strong></li>
+            </ol>
+          </p>
+
+          <p>
+            Tranne le definizioni di funzione e namespace, una dichiarazione termina con un punto e virgola. C'è anche la possibilità di dichiarare più nomi in un'unica dichiarazione. Ecco un paio di esempi:
+            <div class="codeContainer">
+              <div class="codeAndLabel">
+                <p class="codeLabel" id="list12">Listato 1.2</p>
+                <pre><code>
+                  char ch;
+                  string s;
+                  auto count = 1;
+                  const double pi {3.141592};
+                  extern int error_number;
+
+                  const char* name = "Alessio";
+                  const char* season[] = {"sring", "summer", "fall", "winter"};
+                  int day(Date* p) { return p->d; }
+                  double sqrt(double);
+                  template&lt;typename T&gt;T abs(T a) { return a&lt;0 ? -a : a; }
+
+                  constexpr int fac(int n) { return (n&lt;2) ? 1 : n*fac(n-1); }  // possibile valutazione in fase di compilazione
+                  constexpr double zz { ii*fac(7) };                              // inizializzazione in fase di compilazione
+
+                  int* p, y;         // int* p, int y: NON int* y
+                  int v[10], *pv;    // int v[10], int* pv
+                </code></pre>
+              </div>
+            </div>
+          </p>
+
+          <h4 id="ambito">Ambito (campo di visibilità)</h4>
+          <p>
 
           </p>
           <!-- End of chapter -->
+        </div>
 
       </div>
     </div>

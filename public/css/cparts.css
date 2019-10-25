@@ -128,6 +128,20 @@ h4 {
   color: var(--main-black);
 }
 
+table {
+  width: 80%;
+}
+
+table > th, td {
+  width: 20%;
+  text-align: center;
+  padding: .5rem 0;
+}
+
+tr:nth-of-type(odd) {
+      background-color:var(--main-blue);
+}
+
 @media only screen and (max-device-width: 480px) {
   .mainPage {
     top: 0%;
