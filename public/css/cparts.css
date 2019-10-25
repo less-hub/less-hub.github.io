@@ -120,6 +120,14 @@ h4 {
   font-size: 1.4rem;
 }
 
+.clickableList > li > a {
+  color: var(--main-blue);
+}
+
+.clickableList > li > a:hover {
+  color: var(--main-black);
+}
+
 @media only screen and (max-device-width: 480px) {
   .mainPage {
     top: 0%;
