@@ -296,35 +296,36 @@
 
           <p>
             Tranne le definizioni di funzione e namespace, una dichiarazione termina con un punto e virgola. C'è anche la possibilità di dichiarare più nomi in un'unica dichiarazione. Ecco un paio di esempi:
-            <div class="codeContainer">
-              <div class="codeAndLabel">
-                <p class="codeLabel" id="list12">Listato 1.2</p>
-                <pre><code>
-                  char ch;
-                  string s;
-                  auto count = 1;
-                  const double pi {3.141592};
-                  extern int error_number;
-
-                  const char* name = "Alessio";
-                  const char* season[] = {"sring", "summer", "fall", "winter"};
-                  int day(Date* p) { return p->d; }
-                  double sqrt(double);
-                  template&lt;typename T&gt;T abs(T a) { return a&lt;0 ? -a : a; }
-
-                  constexpr int fac(int n) { return (n&lt;2) ? 1 : n*fac(n-1); }  // possibile valutazione in fase di compilazione
-                  constexpr double zz { ii*fac(7) };                              // inizializzazione in fase di compilazione
-
-                  int* p, y;         // int* p, int y: NON int* y
-                  int v[10], *pv;    // int v[10], int* pv
-                </code></pre>
-              </div>
-            </div>
           </p>
+
+          <div class="codeContainer">
+            <div class="codeAndLabel">
+              <p class="codeLabel" id="list12">Listato 1.2</p>
+              <pre><code>
+                char ch;
+                string s;
+                auto count = 1;
+                const double pi {3.141592};
+                extern int error_number;
+
+                const char* name = "Alessio";
+                const char* season[] = {"sring", "summer", "fall", "winter"};
+                int day(Date* p) { return p->d; }
+                double sqrt(double);
+                template&lt;typename T&gt;T abs(T a) { return a&lt;0 ? -a : a; }
+
+                constexpr int fac(int n) { return (n&lt;2) ? 1 : n*fac(n-1); }  // possibile valutazione in fase di compilazione
+                constexpr double zz { ii*fac(7) };                              // inizializzazione in fase di compilazione
+
+                int* p, y;         // int* p, int y: NON int* y
+                int v[10], *pv;    // int v[10], int* pv
+              </code></pre>
+            </div>
+          </div>
 
           <h4 id="ambito">Ambito (campo di visibilità)</h4>
           <p>
-
+            Lorem
           </p>
           <!-- End of chapter -->
         </div>
